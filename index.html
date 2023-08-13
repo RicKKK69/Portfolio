@@ -5,15 +5,61 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RicKKK</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css">
 </head>
 
 <body>
+
+  <!---------------------- Page Loader Start -------------------->
+
+  <div class="page-loader">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <!---------------------- Page Loader End ---------------------->
+
+  <!-------------- Overlay Start ---------------->
+
+  <div class="overlay">
+
+  </div>
+
+  <!-------------- Overlay Start ---------------->
+
   <!------------------------------------ Main Start ------------------------------------->
-  <div class="main">
+  
+  <div class="main hidden">
+
+    <!----------------------- Header Start ------------------------->
+
+    <header class="header">
+      <div class="container">
+        <div class="row flex-end">
+          <button type="button" class="nav-toggler">
+            <span></span>
+          </button>
+          <div class="nav">
+            <div class="nav-inner">
+              <ul>
+                <li><a href="#home" class="nav-item link-item">Home</a></li>
+                <li><a href="#about" class="nav-item link-item">about</a></li>
+                <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+                <li><a href="#contact" class="nav-item link-item">contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!----------------------- Header End --------------------------->
+
     <!----------------------- Home Section Start ------------------------->
-    <section class="home-section alighn-items-center">
+    <section class="home-section alighn-items-center " id="home">
       <div class="container">
         <div class="row alighn-items-center">
           <div class="home-text">
@@ -24,8 +70,8 @@
               Data Entry Specialist <br />
               Expart In Ms Word & Ms Excel
             </h2>
-            <a href="#" class="btn">about me</a>
-            <a href="#" class="btn">portfolio</a>
+            <a href="#about" class="btn link-item">about me</a>
+            <a href="#portfolio" class="btn link-item">portfolio</a>
           </div>
 
           <div class="home-img">
@@ -40,7 +86,7 @@
 
     <!--------------------- About Section start -------------------------->
 
-    <section class="about-section sec-padding">
+    <section class="about-section sec-padding" id="about">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -177,9 +223,11 @@
 
             <!-------------------------------- Experience End ----------------------------->
 
-            <a href="https://drive.google.com/u/1/uc?id=1xt5ZgX8FZ7_YQtArYy3Tq3A9q_A_sKAE&export=download"
+            <!-- https://drive.google.com/u/1/uc?id=1xt5ZgX8FZ7_YQtArYy3Tq3A9q_A_sKAE&export=download -->
+
+            <a href="test.text" target="_blank"
               class="btn">download cv</a>
-            <a href="#" class="btn" target="_blank">contact me</a>
+            <a href="#contact" class="btn link-item">contact me</a>
           </div>
         </div>
       </div>
@@ -189,7 +237,7 @@
 
     <!--------------------- Poerfolio Section Start -------------------------->
 
-    <section class="portfolio-section sec-padding">
+    <section class="portfolio-section sec-padding" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -275,8 +323,7 @@
 
     <!---------------------------- Contact Section Start ------------------------->
 
-    <section class="contact-section">
-
+    <section class="contact-section sec-padding" id="contact">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -353,7 +400,10 @@
   </div>
 
   <!------------------ Portfolio Item Details Popup End ---------------->
-</body>
+
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/eabace7fdc.js" crossorigin="anonymous"></script>
+
+</body>
+
 </html>
