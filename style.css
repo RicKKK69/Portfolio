@@ -619,5 +619,5 @@ Contact Section
 
 .contact-info-item .social-links a:hover{
     color: var(--white);
-    background-color: var(--main-color);
+    background-color: var(--blue);
 }
